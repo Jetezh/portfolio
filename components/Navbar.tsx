@@ -18,7 +18,7 @@ const Navbar = () => {
   });
 
   return (
-      <nav className='absolute w-full top-0 h-[10rem] px-6 md:px-20 text-[2rem] md:text-[3rem] flex justify-between items-center'>
+      <nav className='absolute z-10 w-full top-0 h-[10rem] px-6 md:px-20 text-[2rem] md:text-[3rem] flex justify-between items-center'>
           <Link className='' href="/">
             <Image src={assets.logo} alt='logo' className='w-40' />
           </Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
               opacity: 0,
             }))
           }}
-          className='sticky bg-white/60 backdrop-filter backdrop-blur-lg border-[#F8F4E1] border-solid border-4 px-5 py-5 rounded-2xl flex flex-row gap-5'>
+          className='sticky bg-white/60 backdrop-filter backdrop-blur-lg shadow-md  px-5 py-5 rounded-2xl flex flex-row gap-5'>
               <Tab setPosition={setPosition}>Home</Tab>
               <Tab setPosition={setPosition}>About Me</Tab>
               <Tab setPosition={setPosition}>Portfolio</Tab>

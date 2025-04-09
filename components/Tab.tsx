@@ -40,7 +40,7 @@ type CursorProps = {
 export const Cursor: React.FC<CursorProps> = ({ position }) => {
     return (
         <li 
-        className='absolute z-0 top-3 bottom-3 rounded-lg bg-[#FAF1E6] transition-all duration-300 pointer-events-none'
+        className='absolute z-0 top-3 bottom-3 rounded-xl bg-[#FAF1E6] transition-all duration-300 pointer-events-none'
         style={{
           left: position.left,
           width: position.width,
