@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
       <AuroraBackground>
-        <div className='text-[var(--font-color)] text-7xl h-screen w-screen flex flex-col justify-center items-center'>
+        <div className='text-[var(--font-color)] text-7xl h-full w-full flex flex-col justify-center items-center'>
             <motion.div 
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const Hero = () => {
                 <br /><span className='text-black'>My name is Vega Setiawan</span>
                 <br /><span className='text-black'>I am <span className='text-[#FF9149]'>Fullstack Developer</span></span>
               </h1>
-              <p className='font-normal text-[7rem] mt-[5rem]'>i’m specialized in web development, system design, and <br/>Architecture building</p>
+              <p className='font-normal text-[7rem] mt-[5rem]'>I specialize in web development, system architecture, and <br />scalable system design.</p>
             </motion.div>
         </div>
       </AuroraBackground>

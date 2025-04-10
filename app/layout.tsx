@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fredoka, Geist } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="p-0 m-0">
+    <html lang="en" className="p-0 m-0" suppressHydrationWarning>
       <body
-        className={`${fredoka.className} ${geistSans.className} antialiased`}
+        className={`${fredoka.className} ${geistSans.className} antialiased bg-zinc-50`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
