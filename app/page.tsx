@@ -1,18 +1,20 @@
 'use client'
 
 import About from "@/components/About";
+import EducationSections from "@/components/EducationSections";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+import NavbarContainer from "@/components/NavbarContainer";
 
 export default function Home() {
   return (
     <>
       <header>
-        <Navbar />
+        <NavbarContainer />
       </header>
       <main>
         <Hero />
         <About />
+        <EducationSections />
       </main>
       <footer>
 

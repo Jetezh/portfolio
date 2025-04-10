@@ -4,6 +4,17 @@
   font-family: Fredoka;
 }
 
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
 @theme inline {
   --animate-aurora: aurora 60s linear infinite;
   @keyframes aurora {
@@ -19,3 +30,4 @@
     }
   }
 }
+
