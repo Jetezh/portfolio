@@ -1,11 +1,29 @@
 import React from 'react'
 import { motion } from 'motion/react'
+import { Tabs } from './ui/tabs'
+import { HoverEffect } from './ui/card-hover-effect'
+import Image from 'next/image'
+import { assets } from '@/assets/asset'
 
 const project = [
     {
+        image: assets.freecodecamp,
         title: "UPNI",
-        content: ""
-    }
+        description: "",
+        link: ""
+    },
+    {
+        image: assets.freecodecamp,
+        title: "UPNI",
+        description: "",
+        link: ""
+    },
+    {
+        image: assets.freecodecamp,
+        title: "UPNI",
+        description: "",
+        link: ""
+    },
 ]
 
 const certifications = [
@@ -17,21 +35,129 @@ const certifications = [
 
 const techStack = [
     {
-        title: ""
-    }
+        title: "React",
+        content: (
+            <div>
+                
+            </div>
+        )
+    },
+    {
+        title: "Next.js",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "TailwindCSS",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Javascript",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Typescript",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Node.js",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Express.js",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "NPM",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Git",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Github",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "MySQL",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "MongoDB",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
+    {
+        title: "Figma",
+        content: (
+            <div>
+
+            </div>
+        )
+    },
 ]
 
 const tabs = [
     {
         title: "Project",
-        content: ""
+        value: "Project",
+        content: (
+            <div>
+                <HoverEffect items={project} />
+            </div>
+        )
     },
     {
         title: "Certifications",
+        value: "Certifications",
         content: ""
     },
     {
         title: "Tech Stack",
+        value: "Tech Stack",
         content: ""
     }
 ]
@@ -50,6 +176,7 @@ function PortfolioSections() {
             }}>
                 Portfolios
         </motion.h1>
+        <Tabs tabs={tabs} />
     </div>
   )
 }
