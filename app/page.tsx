@@ -15,7 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        {/* <EducationSections /> */}
+        <EducationSections />
         <PortfolioSections />
       </main>
       <footer>

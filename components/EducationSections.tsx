@@ -99,18 +99,14 @@ const tabs = [
         title: "Formal",
         value: "Formal",
         content: (
-            <div>
-                <Timeline data={educationsFormal} />
-            </div>
+            <Timeline data={educationsFormal} />
         )
     },
     {
         title: "Non Formal",
         value: "Non Formal",
         content: (
-            <div>
-                <Timeline data={educationNonFormal} />
-            </div>
+            <Timeline data={educationNonFormal} />
         )
     }
 ]
