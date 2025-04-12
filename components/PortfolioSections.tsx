@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { Tabs } from './ui/tabs'
 import { HoverEffect } from './ui/card-hover-effect'
-import Image from 'next/image'
 import { assets } from '@/assets/asset'
 import StackIcon from 'tech-stack-icons'
 import Link from 'next/link'
@@ -281,14 +280,17 @@ const tabs = [
         title: "Tech Stack",
         value: "Tech Stack",
         content: (
-            <TechStackSection />
+            <>
+                <TechStackSection />
+                <span className='flex justify-center items-center text-[4rem]'>...and many more!</span>
+            </>
         )
     }
 ]
 
 function PortfolioSections() {
   return (
-    <div className='w-full h-screen flex flex-col items-center text-[4rem] px-40'>
+    <div className='w-full h-screen flex flex-col gap-20 items-center text-[4rem] px-40 mt-100'>
         <motion.h1
             className='text-[10rem] font-semibold'
             initial={{ opacity: 0.0, y: 40 }}

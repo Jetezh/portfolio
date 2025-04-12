@@ -96,7 +96,7 @@ export const FadeInDiv = ({
 }) => {
   
   return (
-    <div className="z-0 relative w-full h-full overflow-y-scroll">
+    <div className="z-0 relative w-full h-full overflow-y-scroll scroll-smooth no-visible-scrollbar">
       {tabs.map((tab) =>
         tab.value === active.value ? (
           <motion.div
@@ -104,8 +104,8 @@ export const FadeInDiv = ({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className={cn("w-full h-full", className)}
+            transition={{ duration: 0.6 }}
+            className={cn("w-full ", className)}
           >
             {tab.content}
           </motion.div>
