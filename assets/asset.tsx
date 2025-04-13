@@ -24,6 +24,7 @@ import linkedin from './linkedin.svg'
 import discord from './discord.svg'
 import instagram from './instagram.svg'
 import email from './email.svg'
+import github from './github.svg'
 
 export const assets = {
     logo,
@@ -51,5 +52,6 @@ export const assets = {
     linkedin,
     discord,
     instagram,
-    email
+    email,
+    github
 }

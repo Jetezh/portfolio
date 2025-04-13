@@ -44,7 +44,6 @@ const NavbarContainer = () => {
           <NavbarLogo />
           <NavItems className='text-[3rem]' items={navItems} />
           <div className='flex items-center gap-4'>
-            <NavbarButton className='text-[2.5rem] font-medium' variant='primary' >Download CV</NavbarButton>
             <NavbarButton className='text-[2.5rem] font-medium' variant='primary' >Dark</NavbarButton>
           </div>
         </NavBody>
@@ -74,13 +73,6 @@ const NavbarContainer = () => {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Download CV
-              </NavbarButton>
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"

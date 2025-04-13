@@ -47,22 +47,22 @@ function Contact() {
             <p>or contect me with...</p>
             <div className='flex flex-row gap-20'>
                 <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[4rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
-                    <Link className='flex flex-row gap-10' href="https://www.linkedin.com/in/vega-setiawan/">
+                    <Link className='flex flex-row items-center gap-10' href="https://www.linkedin.com/in/vega-setiawan/">
                         <Image width={100} height={100} src={assets.linkedin} alt='linkedin'/> Linkedin
                     </Link>
                 </button>
                 <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[4rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
-                    <Link className='flex flex-row gap-10' href="https://www.linkedin.com/in/vega-setiawan/">
+                    <Link className='flex flex-row gap-10' href="mailto:vegasetiawan1603@gmail.com">
                         <Image width={100} height={100} src={assets.email} alt='linkedin'/> Email
                     </Link>
                 </button>
                 <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[4rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
-                    <Link className='flex flex-row gap-10' href="https://www.linkedin.com/in/vega-setiawan/">
+                    <Link className='flex flex-row gap-10' href="https://www.instagram.com/v_ega16?utm_source=qr&igsh=MWMxNzl0dmVuZmEwcw==">
                         <Image width={100} height={100} src={assets.instagram} alt='linkedin'/> Instagram
                     </Link>
                 </button>
                 <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[4rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
-                    <Link className='flex flex-row gap-10' href="https://www.linkedin.com/in/vega-setiawan/">
+                    <Link className='flex flex-row gap-10' href="https://discordapp.com/users/927927583167897661">
                         <Image width={100} height={100} src={assets.discord} alt='linkedin'/> Discord
                     </Link>
                 </button>
