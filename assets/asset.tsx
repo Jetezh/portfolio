@@ -20,6 +20,10 @@ import dcd7 from './Certificate_Belajar_BackEnd_Pemula_dengan_JavaScript.webp'
 import dcd8 from './Certificate_Belajar_Membuat_FrontEnd_Web_untuk_Pemula.webp'
 import dcd9 from './Certificate_Belajar_Dasar_AI.webp'
 import dcd10 from './Certificate_Belajar_Membuat_Aplikasi_Web_dengan_React.webp'
+import linkedin from './linkedin.svg'
+import discord from './discord.svg'
+import instagram from './instagram.svg'
+import email from './email.svg'
 
 export const assets = {
     logo,
@@ -43,5 +47,9 @@ export const assets = {
     dcd7,
     dcd8,
     dcd9,
-    dcd10
+    dcd10,
+    linkedin,
+    discord,
+    instagram,
+    email
 }
