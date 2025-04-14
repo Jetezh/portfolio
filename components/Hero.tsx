@@ -37,7 +37,7 @@ const Hero = () => {
             </button>
             <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-zinc-50 text-black border-gray-800 font-semibold transition duration-200 hover:cursor-pointer hover:bg-[#FAF1E6] hover:text-black border-15 hover:border-[#FAF1E6]">
               <Link className='flex flex-row gap-10 items-center' href="https://github.com/Jetezh">
-                <Image width={120} height={120} src={assets.github} alt='github' />
+                <Image width={100} height={100} src={assets.github} alt='github' />
                 Github 
               </Link>
             </button>
