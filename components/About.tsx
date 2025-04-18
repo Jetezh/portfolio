@@ -19,7 +19,7 @@ const About = () => {
             </motion.h1>
             <div className='flex flex-row items-center gap-80'>
                 <p
-                className='text-[4rem] font-normal flex-3/5'>
+                className='text-[5.5rem] font-normal flex-3/5'>
                 I have been coding for over two years, beginning my journey in 2023. Initially, 
                 I started by learning HTML, CSS, and JavaScript to build basic websites. During my time at university, 
                 I also studied C, C++, and Java to understand programming paradigms and foundational concepts.

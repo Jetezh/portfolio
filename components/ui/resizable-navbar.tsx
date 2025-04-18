@@ -231,7 +231,13 @@ export const MobileNavToggle = ({
   );
 };
 
-export const NavbarLogo = () => {
+export const NavbarLogo = ({
+  width, 
+  height
+  } : {
+    width?: number;
+  height?: number;
+}) => {
   return (
     <Link
       href="#"
@@ -240,8 +246,8 @@ export const NavbarLogo = () => {
       <Image
         src={assets.logo}
         alt="logo"
-        width={200}
-        height={200}
+        width={width}
+        height={height}
       />
       <span className="font-medium text-black dark:text-white"></span>
     </Link>

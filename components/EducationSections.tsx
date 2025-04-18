@@ -4,23 +4,23 @@ import Image from 'next/image'
 import { assets } from '@/assets/asset'
 import { Timeline } from './ui/timeline'
 import { motion } from 'motion/react'
-import { StickyScroll } from './ui/sticky-scroll-reveal'
 
 const educationsFormal = [
     {
         title: "2018 - 2021",
-        description: (
-            <>
-                <h2 className='text-[4rem] font-medium'>SMK Negeri 42 Jakarta<br />
-                42 Jakarta Vocational High School</h2>
-                <p>Office Administration</p>
-            </>
-        ),
         content: (
             <div className='flex flex-col gap-10'>
+                <h2 className='text-[5.5rem] font-medium'>SMK Negeri 42 Jakarta</h2>
+                <p className='text-[5rem] italic'>Office Administration</p>
                 <Image 
                 src={assets.smk1} 
                 alt='school-photo1'
+                width={500}
+                height={200}
+                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'/>
+                <Image 
+                src={assets.smk2} 
+                alt='school-photo2'
                 width={500}
                 height={200}
                 className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'/>
@@ -29,11 +29,10 @@ const educationsFormal = [
     },
     {
         title: "2023 - Present",
-        description: "",
         content: (
             <div className='flex flex-col gap-10'>
-                <h2 className='text-[4rem] font-medium'>Information System undergraduate bachelor degree</h2>
-                <p>Year 2</p>
+                <h2 className='text-[5.5rem] font-medium'>Universitas Pembangunan Nasional Veteran Jakarta</h2>
+                <p className='text-[5rem] italic'>Information System undergraduate bachelor degree</p>
                 <Image
                 src={assets.upnvj1}
                 alt='university-photo1'
@@ -97,7 +96,7 @@ const tabs = [
         title: "Formal",
         value: "Formal",
         content: (
-            <StickyScroll content={educationsFormal} />
+            <Timeline data={educationsFormal} />
         )
     },
     {
@@ -111,7 +110,7 @@ const tabs = [
 
 function EducationSections() {
   return (
-    <div className='w-full flex flex-col gap-20 items-center text-[4rem] px-40'>
+    <div className='w-full overflow-clip flex flex-col gap-20 items-center text-[4rem] px-40'>
         <motion.h1
             className='text-[10rem] font-semibold'
             initial={{ opacity: 0.0, y: 40 }}

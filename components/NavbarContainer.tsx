@@ -12,6 +12,7 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import { ThemeSwitch } from './ui/switch';
 
 const NavbarContainer = () => {
   const navItems = [
@@ -40,11 +41,11 @@ const NavbarContainer = () => {
     <div className='relative w-full'>
       <Navbar>
         {/* desktop navigation */}
-        <NavBody className='text-[2rem]'>
-          <NavbarLogo />
-          <NavItems className='text-[3rem]' items={navItems} />
+        <NavBody>
+          <NavbarLogo width={300} height={300} />
+          <NavItems className='text-[5rem]' items={navItems} />
           <div className='flex items-center gap-4'>
-            <NavbarButton className='text-[2.5rem] font-medium' variant='primary' >Dark</NavbarButton>
+            <ThemeSwitch />
           </div>
         </NavBody>
 

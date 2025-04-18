@@ -28,14 +28,14 @@ const Hero = () => {
             </h1>
             <p className='font-normal text-[7rem] mt-[5rem]'>I specialize in web development, system architecture, and <br />scalable system design.</p>
           </motion.div>
-          <div className='flex flex-row gap-20'>
-            <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-[#FF9149] text-white font-semibold transition duration-200 hover:bg-white hover:cursor-pointer hover:text-black border-2 border-transparent hover:border-teal-500">
+          <div className='z-10 flex flex-row gap-20'>
+            <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-[#FF9149] text-white font-semibold transition duration-300 hover:bg-white hover:cursor-pointer hover:text-[#FF9149] border-8 border-transparent hover:border-[#FF9149] active:scale-90">
               <Link className='flex flex-row gap-10 items-center' href="">
                 <SiReaddotcv />
                 Download CV  
               </Link>
             </button>
-            <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-zinc-50 text-black border-gray-800 font-semibold transition duration-200 hover:cursor-pointer hover:bg-[#FAF1E6] hover:text-black border-15 hover:border-[#FAF1E6]">
+            <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-zinc-50 text-black border-gray-800 font-semibold transition duration-300 hover:cursor-pointer hover:bg-[#FAF1E6] hover:text-black border-15 hover:border-[#FAF1E6] active:scale-90">
               <Link className='flex flex-row gap-10 items-center' href="https://github.com/Jetezh">
                 <Image width={100} height={100} src={assets.github} alt='github' />
                 Github 
