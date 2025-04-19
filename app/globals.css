@@ -16,7 +16,7 @@
 
 :root {
   --bg-color: #fafafa;
-  --accent-color: #FFA725;
+  --accent-color: #FF9149;
   --primary-color: #6A9C89;
   --secondary-color: #C1D8C3;
   --third-color: #FFF5E4;
@@ -28,12 +28,12 @@
   --bg-button-hover: white;
 
   --bg-navbar: rgba(255, 255, 255, 0.6);
-  --navbar-items: #FAF1E6;
+  --navbar-items: var(--accent-color);
 }
 
 .dark {
     --bg-color: #18181b;
-    --accent-color: #FFA725;
+    --accent-color: #FF9149;
     --primary-color: #6A9C89;
     --secondary-color: #C1D8C3;
     --third-color: #FFF5E4;
@@ -45,7 +45,7 @@
     --bg-button-hover: white;
     
     --bg-navbar: rgba(255, 255, 255, 0.15);
-    --navbar-items: #262626;
+    --navbar-items: var(--accent-color);
 }
 
 @theme inline {

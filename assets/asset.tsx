@@ -1,4 +1,5 @@
-import logo from './logo.svg'
+import logo1 from './logo1.svg'
+import logo2 from './logo2.svg'
 import smk1 from './smk1.webp'
 import smk2 from './smk2.webp'
 import upnvj1 from './upnvj1.webp'
@@ -27,7 +28,8 @@ import email from './email.svg'
 import github from './github.svg'
 
 export const assets = {
-    logo,
+    logo1,
+    logo2,
     smk1,
     smk2,
     upnvj1,

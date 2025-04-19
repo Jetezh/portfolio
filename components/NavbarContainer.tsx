@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavBody,
@@ -12,53 +12,77 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { ThemeSwitch } from './ui/switch';
+import { ThemeSwitch } from "./ui/switch";
+import { assets } from "@/assets/asset";
 
 const NavbarContainer = () => {
   const navItems = [
-    {
-      name: "HOME",
-      link: "#",
-    },
-    {
-      name: "ABOUT ME",
-      link: "#about-me",
-    },
-    {
-      name: "PORTFOLIO",
-      link: "#portfolio",
-    },
-    {
-      name: "CONTACT",
-      link: "#contact",
-    },
-    
-  ]
+    { name: "HOME", link: "#" },
+    { name: "ABOUT ME", link: "#about-me" },
+    { name: "PORTFOLIO", link: "#portfolio" },
+    { name: "CONTACT", link: "#contact" },
+  ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    const html = document.documentElement;
+
+    const updateTheme = () => {
+      if (html.classList.contains("dark")) {
+        setTheme("dark");
+      } else {
+        setTheme("light");
+      }
+    };
+
+    // Inisialisasi saat mount
+    updateTheme();
+
+    // Observe perubahan class pada <html>
+    const observer = new MutationObserver(() => {
+      updateTheme();
+    });
+
+    observer.observe(html, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div className='relative w-full'>
+    <div className="relative w-full">
       <Navbar>
         {/* desktop navigation */}
         <NavBody>
-          <NavbarLogo width={300} height={300} />
-          <NavItems className='text-[5rem]' items={navItems} />
-          <div className='flex items-center gap-4'>
+          <NavbarLogo
+            width={300}
+            height={300}
+            src={theme === "light" ? assets.logo1 : assets.logo2}
+          />
+          <NavItems className="text-[5rem]" items={navItems} />
+          <div className="flex items-center gap-4">
             <ThemeSwitch />
           </div>
         </NavBody>
 
         {/* mobile navigation */}
         <MobileNav>
-        <MobileNavHeader>
-            <NavbarLogo />
+          <MobileNavHeader>
+            <NavbarLogo
+              width={200}
+              height={200}
+              src={theme === "light" ? assets.logo1 : assets.logo2}
+            />
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             />
           </MobileNavHeader>
- 
+
           <MobileNavMenu
             isOpen={isMobileMenuOpen}
             onClose={() => setIsMobileMenuOpen(false)}
@@ -79,14 +103,14 @@ const NavbarContainer = () => {
                 variant="primary"
                 className="w-full"
               >
-                Dark
+                {theme === "light" ? "Light" : "Dark"}
               </NavbarButton>
             </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarContainer
+export default NavbarContainer;

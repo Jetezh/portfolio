@@ -10,7 +10,6 @@ import {
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { assets } from "@/assets/asset";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -246,7 +245,7 @@ export const NavbarLogo = ({
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <Image
-        src={assets.logo}
+        src={src}
         alt="logo"
         width={width}
         height={height}
