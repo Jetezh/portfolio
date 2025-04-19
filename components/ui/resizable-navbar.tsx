@@ -105,7 +105,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-6/7 flex-row items-center justify-between self-start rounded-3xl bg-transparent px-18 py-12 lg:flex dark:bg-transparent",
-        visible && "bg-white/60 backdrop-filter backdrop-blur-lg dark:bg-neutral-950/80",
+        visible && "bg-[var(--bg-navbar)] backdrop-filter backdrop-blur-lg",
         className,
       )}
     >
@@ -129,14 +129,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-9 py-6 text-neutral-600 dark:text-neutral-300"
+          className="relative px-9 py-6 text-[var(--primary-font-color)]"
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-2xl bg-[#FAF1E6] dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full rounded-2xl bg-[var(--navbar-items)]"
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -233,10 +233,12 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = ({
   width, 
-  height
+  height,
+  src,
   } : {
-    width?: number;
+  width?: number;
   height?: number;
+  src: string;
 }) => {
   return (
     <Link

@@ -23,10 +23,10 @@ const Hero = () => {
           }}
           className='text-center font-medium'>
             <h1 className='text-[12rem] font-semibold text-[#FF9149]'>Greetings,
-              <br /><span className='text-black'>My name is Vega Setiawan</span>
-              <br /><span className='text-black'>Passionate <span className='text-[#FF9149]'>Fullstack Developer</span></span>
+              <br /><span className='text-[var(--primary-font-color)]'>My name is Vega Setiawan</span>
+              <br /><span className='text-[var(--primary-font-color)]'>Passionate <span className='text-[#FF9149]'>Fullstack Developer</span></span>
             </h1>
-            <p className='font-normal text-[7rem] mt-[5rem]'>I specialize in web development, system architecture, and <br />scalable system design.</p>
+            <p className='font-normal text-[var(--primary-font-color)] text-[7rem] mt-[5rem]'>I specialize in web development, system architecture, and <br />scalable system design.</p>
           </motion.div>
           <div className='z-10 flex flex-row gap-20'>
             <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-[#FF9149] text-white font-semibold transition duration-300 hover:bg-white hover:cursor-pointer hover:text-[#FF9149] border-8 border-transparent hover:border-[#FF9149] active:scale-90">

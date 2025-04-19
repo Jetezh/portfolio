@@ -14,10 +14,39 @@
   display: none;
 }
 
-/* .accent-color {
-  color: ;
-} */
+:root {
+  --bg-color: #fafafa;
+  --accent-color: #FFA725;
+  --primary-color: #6A9C89;
+  --secondary-color: #C1D8C3;
+  --third-color: #FFF5E4;
+  --border-color: black;
+  --card-color: ;
+  --primary-font-color: black;
+  --secondary-font-color: ;
+  --bg-button: #FFF5E4;
+  --bg-button-hover: white;
 
+  --bg-navbar: rgba(255, 255, 255, 0.6);
+  --navbar-items: #FAF1E6;
+}
+
+.dark {
+    --bg-color: #18181b;
+    --accent-color: #FFA725;
+    --primary-color: #6A9C89;
+    --secondary-color: #C1D8C3;
+    --third-color: #FFF5E4;
+    --border-color: black;
+    --card-color: ;
+    --primary-font-color: white;
+    --secondary-font-color: ;
+    --bg-button: #FFF5E4;
+    --bg-button-hover: white;
+    
+    --bg-navbar: rgba(255, 255, 255, 0.15);
+    --navbar-items: #262626;
+}
 
 @theme inline {
   --animate-aurora: aurora 60s linear infinite;

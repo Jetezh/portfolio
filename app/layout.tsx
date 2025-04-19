@@ -24,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="p-0 m-0" suppressHydrationWarning>
+    <html lang="en" className="p-0 m-0 dark" suppressHydrationWarning>
       <body
-        className={`${fredoka.className} ${geistSans.className} antialiased bg-zinc-50`}
+        className={`${fredoka.className} ${geistSans.className} antialiased bg-[var(--bg-color)]`}
       >
         <ThemeProvider>
           {children}
