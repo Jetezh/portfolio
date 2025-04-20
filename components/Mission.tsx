@@ -3,7 +3,7 @@ import { FcInspection, FcSportsMode } from 'react-icons/fc'
 
 const Mission = () => {
   return (
-    <div className='flex flex-2/5 flex-col justify-center gap-30 bg-[#9FB3DF]/30 backdrop-filter backdrop-blur-lg rounded-4xl py-20 px-25'>
+    <div className='flex flex-2/5 flex-col justify-center gap-30 bg-[var(--card-color)] backdrop-filter backdrop-blur-lg rounded-4xl py-20 px-25'>
         <h2 className='text-[8rem] font-medium flex flex-row gap-10 items-center'>
             <FcSportsMode /> My Mission
         </h2>

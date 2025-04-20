@@ -112,7 +112,7 @@ function EducationSections() {
   return (
     <div className='overflow-clip flex flex-col gap-20 items-center text-[4rem] px-40'>
         <motion.h1
-            className='text-[10rem] font-semibold'
+            className='text-[10rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

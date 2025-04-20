@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className='w-full h-screen flex flex-col gap-20 items-center text-[4rem] px-40'>
         <motion.h1
-            className='text-[10rem] font-semibold'
+            className='text-[10rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -19,11 +19,11 @@ function Contact() {
             }}>
                 Contact Me
             </motion.h1>
-        <p className='text-[6rem] text-center'>
+        <p className='text-[6rem] text-center text-[var(--primary-font-color)]'>
             I&apos;m always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message.
         </p>
         <div className='w-full p-30 border-3 rounded-4xl border-gray-500'>
-            <form className='flex flex-col text-[5rem]' action="">
+            <form className='flex flex-col text-[5rem] text-[var(--primary-font-color)]' action="">
                 <div className='flex flex-row gap-20'>
                     <div className='flex flex-col flex-1/2'>
                         <label htmlFor="username">Name</label>
@@ -37,7 +37,7 @@ function Contact() {
                 <label className='mt-20' htmlFor="message">Message</label>
                 <textarea className='p-10 rounded-3xl border-4 border-gray-500 resize-none' rows={7} name="message" id="message" placeholder='this is message...' aria-required></textarea>
                 <div className='flex justify-end'>
-                    <button type='submit' className="hover:cursor-pointer font-semibold bg-[#F1EFEC] hover:bg-white mt-20 flex flex-row items-center gap-15 px-14 py-10 text-[5rem] rounded-3xl text-black transition duration-200">
+                    <button type='submit' className="hover:cursor-pointer font-semibold bg-[var(--bg-button)] hover:bg-[var(--bg-button-hover)] mt-20 flex flex-row items-center gap-15 px-14 py-10 text-[5rem] rounded-3xl text-[var(--primary-font-color)] transition duration-200">
                         <LuSend />
                         Send
                     </button>
@@ -46,22 +46,22 @@ function Contact() {
         </div>
             <p className='text-[6rem]'>or contect me with...</p>
             <div className='flex flex-row gap-20'>
-                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
+                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-[var(--primary-font-color)] bg-[var(--bg-button)] hover:bg-[var(--bg-button-hover)] hover:border-[#F1EFEC] transition duration-200">
                     <Link className='flex flex-row items-center gap-10' href="https://www.linkedin.com/in/vega-setiawan/">
                         <Image width={100} height={100} src={assets.linkedin} alt='linkedin'/> Linkedin
                     </Link>
                 </button>
-                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
+                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-[var(--primary-font-color)] bg-[var(--bg-button)] hover:bg-[var(--bg-button-hover)] hover:border-[#F1EFEC] transition duration-200">
                     <Link className='flex flex-row gap-10' href="mailto:vegasetiawan1603@gmail.com">
                         <Image width={100} height={100} src={assets.email} alt='linkedin'/> Email
                     </Link>
                 </button>
-                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
+                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-[var(--primary-font-color)] bg-[var(--bg-button)] hover:bg-[var(--bg-button-hover)] hover:border-[#F1EFEC] transition duration-200">
                     <Link className='flex flex-row gap-10' href="https://www.instagram.com/v_ega16?utm_source=qr&igsh=MWMxNzl0dmVuZmEwcw==">
                         <Image width={100} height={100} src={assets.instagram} alt='linkedin'/> Instagram
                     </Link>
                 </button>
-                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-black bg-white hover:bg-[#F1EFEC] hover:border-[#F1EFEC] transition duration-200">
+                <button type='submit' className="hover:cursor-pointer px-16 py-12 text-[5rem] rounded-4xl border border-neutral-600 text-[var(--primary-font-color)] bg-[var(--bg-button)] hover:bg-[var(--bg-button-hover)] hover:border-[#F1EFEC] transition duration-200">
                     <Link className='flex flex-row gap-10' href="https://discordapp.com/users/927927583167897661">
                         <Image width={100} height={100} src={assets.discord} alt='linkedin'/> Discord
                     </Link>

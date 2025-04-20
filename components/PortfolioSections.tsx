@@ -232,7 +232,7 @@ function TechStackSection() {
                     <AnimatePresence>
                         {hoveredIndex === i && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-4xl"
+                                className="absolute inset-0 h-full w-full bg-[var(--card-hover-color)] block rounded-4xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -246,7 +246,7 @@ function TechStackSection() {
                             />
                         )}
                     </AnimatePresence>
-                    <button className="relative z-50 gap-10 px-15 py-8 text-[4rem] flex flex-row rounded-2xl hover:cursor-pointer border-neutral-600 text-black bg-[#F1EFEC] hover:bg-gray-100 transition duration-200">
+                    <button className="relative z-50 gap-10 px-15 py-8 text-[4rem] flex flex-row rounded-2xl hover:cursor-pointer border-neutral-600 text-[var(--primary-font-color)] bg-[var(--card-color)] hover:bg-[var(--bg-button-hover)] transition duration-200">
                         <StackIcon name={tech.icon} />
                         {tech.title}
                     </button>
@@ -282,7 +282,7 @@ const tabs = [
         content: (
             <>
                 <TechStackSection />
-                <span className='flex justify-center items-center text-[4rem]'>...and many more!</span>
+                <span className='flex justify-center items-center text-[var(--primary-font-color)] text-[4rem]'>...and many more!</span>
             </>
         )
     }
@@ -292,7 +292,7 @@ function PortfolioSections() {
   return (
     <div className='w-full h-screen flex flex-col gap-20 items-center text-[4rem] px-40 mt-100'>
         <motion.h1
-            className='text-[10rem] font-semibold'
+            className='text-[10rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

@@ -7,7 +7,7 @@ const About = () => {
     <div id='#about-me' className='px-40 w-full h-screen'>
         <div className='flex flex-col justify-center items-center gap-30'>
             <motion.h1
-            className='text-[10rem] font-semibold'
+            className='text-[10rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -17,7 +17,7 @@ const About = () => {
             }}>
                 About Me
             </motion.h1>
-            <div className='flex flex-row items-center gap-80'>
+            <div className='flex flex-row items-center gap-80 text-[var(--primary-font-color)]'>
                 <p
                 className='text-[5.5rem] font-normal flex-3/5'>
                 I have been coding for over two years, beginning my journey in 2023. Initially, 
