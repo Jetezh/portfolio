@@ -246,7 +246,7 @@ function TechStackSection() {
                             />
                         )}
                     </AnimatePresence>
-                    <button className="relative z-50 gap-10 px-15 py-8 text-[4rem] flex flex-row rounded-2xl hover:cursor-pointer border-neutral-600 text-[var(--primary-font-color)] bg-[var(--card-color)] hover:bg-[var(--bg-button-hover)] transition duration-200">
+                    <button className="relative z-50 gap-10 px-15 py-8 text-[4rem] flex flex-row rounded-2xl hover:cursor-pointer border-1 border-[var(--card-color)] group-hover:border-[var(--border-hover)] text-[var(--primary-font-color)] bg-[var(--card-color)] transition duration-200">
                         <StackIcon name={tech.icon} />
                         {tech.title}
                     </button>

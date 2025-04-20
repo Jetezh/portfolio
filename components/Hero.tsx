@@ -28,15 +28,15 @@ const Hero = () => {
             <p className='font-normal text-[var(--primary-font-color)] text-[7rem] mt-[5rem]'>I specialize in web development, system architecture, and <br />scalable system design.</p>
           </motion.div>
           <div className='z-10 flex flex-row gap-20'>
-            <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-[#FF9149] text-white font-semibold transition duration-300 hover:bg-[var(--button-hover)] hover:cursor-pointer hover:text-[#FF9149] border-15 border-transparent hover:border-[#FF9149] active:scale-90">
+            <button className="mt-20 px-20 py-16 text-[4.5rem] rounded-4xl bg-[#FF9149] text-white font-semibold transition duration-300 hover:bg-[var(--button-hover)] hover:cursor-pointer hover:text-[#FF9149] border-15 border-transparent hover:border-[#FF9149] active:scale-90">
               <Link className='flex flex-row gap-10 items-center' href="">
                 <SiReaddotcv />
                 Download CV  
               </Link>
             </button>
-            <button className="mt-20 px-20 py-16 tex-[7rem] rounded-4xl bg-[var(--bg-button)] text-[var(--primary-font-color)] border-[var(--border-color)] font-semibold transition duration-300 hover:cursor-pointer hover:bg-[var(--github-button-hover)] hover:text-black border-15 hover:border-[var(--github-border)] active:scale-90">
+            <button className="mt-20 px-20 py-16 text-[4.5rem] rounded-4xl bg-[var(--bg-button)] text-[var(--primary-font-color)] border-[var(--border-color)] font-semibold transition duration-300 hover:cursor-pointer hover:bg-[var(--github-button-hover)] hover:text-black border-15 hover:border-[var(--github-border)] active:scale-90">
               <Link className='flex flex-row gap-10 items-center' href="https://github.com/Jetezh">
-                <FaSquareGithub className='text-[6rem] hover:text-[var(--primary-font-color)]' />
+                <FaSquareGithub className='text-[6rem] ' />
                 Github 
               </Link>
             </button>
