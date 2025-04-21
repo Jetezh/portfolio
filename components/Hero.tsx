@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       <AuroraBackground>
-        <div id='#hero' className='text-[var(--font-color)] text-7xl h-full w-full flex flex-col justify-center items-center'>
+        <div id='#hero' className='text-7xl h-full w-full md: flex flex-col justify-center items-center'>
           <motion.div 
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ const Hero = () => {
             ease: "easeInOut",
           }}
           className='text-center font-medium'>
-            <h1 className='text-[12rem] font-semibold text-[#FF9149]'>Greetings,
+            <h1 className='text-[12rem] sm:text-[2rem] font-semibold text-[#FF9149]'>Greetings,
               <br /><span className='text-[var(--primary-font-color)]'>My name is Vega Setiawan</span>
               <br /><span className='text-[var(--primary-font-color)]'>Passionate <span className='text-[#FF9149]'>Fullstack Developer</span></span>
             </h1>

@@ -24,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="p-0 m-0 dark" suppressHydrationWarning>
+    <html lang="en" className="p-0 m-0 dark no-visible-scrollbar" suppressHydrationWarning>
       <body
-        className={`${fredoka.className} ${geistSans.className} antialiased bg-[var(--bg-color)]`}
+        className={`${fredoka.className} ${geistSans.className} antialiased bg-[var(--bg-color)] scrollbar scroll-smooth`}
       >
         <ThemeProvider>
           {children}

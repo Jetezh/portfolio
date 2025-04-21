@@ -59,11 +59,9 @@ const NavbarContainer = () => {
         {/* desktop navigation */}
         <NavBody>
           <NavbarLogo
-            width={300}
-            height={300}
             src={theme === "light" ? assets.logo1 : assets.logo2}
           />
-          <NavItems className="text-[5rem]" items={navItems} />
+          <NavItems className="text-[5rem] md:text-[4rem]" items={navItems} />
           <div className="flex items-center gap-4">
             <ThemeSwitch />
           </div>
@@ -73,8 +71,6 @@ const NavbarContainer = () => {
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo
-              width={200}
-              height={200}
               src={theme === "light" ? assets.logo1 : assets.logo2}
             />
             <MobileNavToggle

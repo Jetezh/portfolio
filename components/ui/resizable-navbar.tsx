@@ -103,7 +103,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-6/7 flex-row items-center justify-between self-start rounded-3xl bg-transparent px-18 py-12 lg:flex dark:bg-transparent",
+        "relative z-[60] mx-auto hidden w-full max-w-6/7 flex-row items-center justify-between self-start rounded-3xl bg-transparent px-18 py-12 lg:flex dark:bg-transparent md:px-14 md:py-8",
         visible && "bg-[var(--bg-navbar)] backdrop-filter backdrop-blur-lg",
         className,
       )}
@@ -231,24 +231,19 @@ export const MobileNavToggle = ({
 };
 
 export const NavbarLogo = ({
-  width, 
-  height,
   src,
   } : {
-  width?: number;
-  height?: number;
   src: string;
 }) => {
   return (
     <Link
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative h-full z-20 mr-4 flex items-center space-x-2 px-2 py-1 font-normal text-black"
     >
       <Image
         src={src}
         alt="logo"
-        width={width}
-        height={height}
+        className="h-full lg:w-60 md:w-45 sm:w-20"
       />
       <span className="font-medium text-black dark:text-white"></span>
     </Link>

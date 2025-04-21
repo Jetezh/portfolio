@@ -15,7 +15,7 @@ function Contact() {
     }
 
     return (
-        <div className='w-full h-screen flex flex-col gap-20 items-center text-[4rem] px-40'>
+        <div className='mt-100 w-full h-full flex flex-col gap-20 items-center text-[4rem] px-40'>
             <motion.h1
                 className='text-[10rem] font-semibold text-[var(--accent-color)]'
                 initial={{ opacity: 0.0, y: 40 }}
