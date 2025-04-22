@@ -17,7 +17,7 @@ const About = () => {
             }}>
                 About Me
             </motion.h1>
-            <div className='flex flex-row items-center gap-3 lg:gap-10 md:gap-5 text-[var(--primary-font-color)]'>
+            <div className='flex lg:flex-row md:flex-row flex-col items-center gap-5 lg:gap-10 md:gap-5 text-[var(--primary-font-color)]'>
               <div className='flex flex-col gap-3 lg:gap-8 md:gap-5 text-[1rem] lg:text-[2.5rem] md:text-[22px] font-normal flex-3/5'>
                 <p>
                   I began my coding journey in 2023, starting with HTML, CSS, and JavaScript to build basic websites.  

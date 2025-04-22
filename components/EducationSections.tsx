@@ -10,8 +10,8 @@ const educationsFormal = [
         title: "2018 - 2021",
         content: (
             <div className='flex flex-col gap-10'>
-                <h2 className='text-[5.5rem] font-medium'>SMK Negeri 42 Jakarta</h2>
-                <p className='text-[5rem] italic'>Office Administration</p>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>SMK Negeri 42 Jakarta</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] italic'>Office Administration</p>
                 <Image 
                 src={assets.smk1} 
                 alt='school-photo1'
@@ -31,8 +31,8 @@ const educationsFormal = [
         title: "2023 - Present",
         content: (
             <div className='flex flex-col gap-10'>
-                <h2 className='text-[5.5rem] font-medium'>Universitas Pembangunan Nasional Veteran Jakarta</h2>
-                <p className='text-[5rem] italic'>Information System undergraduate bachelor degree</p>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>Universitas Pembangunan Nasional Veteran Jakarta</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] italic'>Information System undergraduate bachelor degree</p>
                 <Image
                 src={assets.upnvj1}
                 alt='university-photo1'
@@ -55,8 +55,8 @@ const educationNonFormal = [
         title: "2023 - Present",
         content: (
             <div className='flex flex-col gap-10'>
-                <h2 className='text-[6rem] font-medium'>Dicoding</h2>
-                <p>I recieved Dicoding Scholarship for Mechine Learning Path from Beginner to Intermediate, BackEnd Path for Beginner, FrontEnd path for Beginner, and some other course that related to IT field</p>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>Dicoding</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem]'>I recieved Dicoding Scholarship for Mechine Learning Path from Beginner to Intermediate, BackEnd Path for Beginner, FrontEnd path for Beginner, and some other course that related to IT field</p>
                 <Image
                 src={assets.dicoding}
                 alt=''
@@ -70,9 +70,9 @@ const educationNonFormal = [
         title: "2023 - Present",
         content: (
             <div className='flex flex-col gap-10'>
-                <h2 className='text-[6rem] font-medium'>Freecodecamp</h2>
-                <p>I learnt course for web development mainly, the course i learned </p>
-                <ul>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>Freecodecamp</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem]'>I learnt course for web development mainly, the course i learned </p>
+                <ul className='lg:text-[3rem] md:text-[2rem] text-[1.3rem]' >
                     <li>1. Responisve Web Design</li>
                     <li>2. Javascript Algorithms and Data Structures</li>
                     <li>3. Front End Development Libraries</li>
@@ -110,9 +110,9 @@ const tabs = [
 
 function EducationSections() {
   return (
-    <div className='mt-100 overflow-clip flex flex-col gap-20 items-center text-[4rem] px-40'>
+    <div className='lg:mt-50 md:mt-20 mt-10 overflow-clip flex flex-col lg:gap-18 md:gap-10 gap-5 items-center text-[4rem] px-5 lg:px-20 md:px-10'>
         <motion.h1
-            className='text-[10rem] font-semibold text-[var(--accent-color)]'
+            className='text-[2rem] lg:text-[6rem] md:text-[4rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

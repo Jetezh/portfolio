@@ -52,7 +52,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-18 py-10 rounded-full hover:cursor-pointer", tabClassName)}
+            className={cn("relative lg:px-14 lg:py-8 md:px-10 md:py-5 px-3 py-2 rounded-full hover:cursor-pointer", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -62,13 +62,13 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-[var(--bg-button)] dark:bg-zinc-800 rounded-3xl ",
+                  "absolute inset-0 bg-[var(--bg-button)] dark:bg-zinc-800 lg:rounded-3xl md:rounded-2xl rounded-xl ",
                   activeTabClassName
                 )}
               />
             )}
 
-            <span className="relative block text-[6rem] text-[var(--primary-font-color)]">
+            <span className="relative block lg:text-[3rem] md:text-[2.2rem] text-[1.5rem] text-[var(--primary-font-color)]">
               {tab.title}
             </span>
           </button>

@@ -35,8 +35,8 @@ const Hero = () => {
               </Link>
             </button>
             <button className="px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-[1rem] lg:text-[2.5rem] md:text-[2rem] rounded-lg lg:rounded-3xl md:rounded-2xl bg-[var(--bg-button)] text-[var(--primary-font-color)] border-[var(--border-color)] font-semibold transition duration-300 hover:cursor-pointer hover:bg-[var(--github-button-hover)] hover:text-black border-4 lg:border-8 md:border-6 hover:border-[var(--github-border)] active:scale-90">
-              <Link className='flex flex-row gap-2 lg:gap-10 md:gap-6 items-center' href="https://github.com/Jetezh">
-                <FaSquareGithub className='text-[1.2rem] lg:text-[4.5rem] md:text-[3rem]' />
+              <Link className='flex flex-row gap-2 lg:gap-8 md:gap-6 items-center' href="https://github.com/Jetezh">
+                <FaSquareGithub className='text-[1.2rem] lg:text-[4rem] md:text-[3rem]' />
                 Github 
               </Link>
             </button>

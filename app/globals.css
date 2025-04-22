@@ -24,7 +24,7 @@
   --card-hover-color: rgba(229, 229, 229, 1);
   --border-hover: rgba(100, 116, 139, 0.5);
   --primary-font-color: black;
-  --secondary-font-color: ;
+  --sticky-font-color: #737373;
   --bg-button: #F1EFEC;
   --bg-button-hover: rgba(224, 224, 224, 1);
   --bg-navbar: rgba(255, 255, 255, 0.6);
@@ -59,7 +59,7 @@
   --card-hover-color: rgba(53, 71, 97, 1);
   --border-hover: rgba(100, 116, 139, 1);
   --primary-font-color: white;
-  --secondary-font-color: ;
+  --sticky-font-color: #737373;
   --bg-button: rgba(95, 95, 95, 0.6);
   --bg-button-hover: rgba(223, 223, 223, 0.66);
   --bg-navbar: rgba(255, 255, 255, 0.15);
