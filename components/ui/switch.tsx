@@ -97,9 +97,9 @@ export const ThemeSwitch: React.FC<SwitchProps> = (props) => {
           {...getWrapperProps()}
           className={slots.wrapper({
             class: [
-              "w-35 h-35",
+              "w-20 h-20",
               "flex items-center justify-center",
-              "rounded-3xl",
+              "rounded-2xl",
               "transition-colors duration-300",
               isDark
                 ? "bg-white/20 hover:bg-yellow-100"
@@ -108,9 +108,9 @@ export const ThemeSwitch: React.FC<SwitchProps> = (props) => {
           })}
         >
           {isDark ? (
-            <SunIcon className="text-yellow-400 w-18 h-18" />
+            <SunIcon className="text-yellow-400 w-12 h-12" />
           ) : (
-            <MoonIcon className="text-blue-500 w-18 h-18" />
+            <MoonIcon className="text-blue-500 w-12 h-12" />
           )}
         </div>
       </Component>

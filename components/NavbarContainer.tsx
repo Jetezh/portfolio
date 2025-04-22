@@ -61,7 +61,7 @@ const NavbarContainer = () => {
           <NavbarLogo
             src={theme === "light" ? assets.logo1 : assets.logo2}
           />
-          <NavItems className="lg:text-[5rem] md:text-[4rem] text-[2rem]" items={navItems} />
+          <NavItems className="lg:text-[2rem] md:text-[1rem] text-[.7rem]" items={navItems} />
           <div className="flex items-center gap-4">
             <ThemeSwitch />
           </div>

@@ -4,10 +4,10 @@ import Mission from './Mission'
 
 const About = () => {
   return (
-    <div id='#about-me' className='px-40 w-full h-full'>
-        <div className='flex flex-col justify-center items-center gap-30'>
+    <div id='#about-me' className='px-5 lg:px-20 md:px-10 w-full h-full'>
+        <div className='flex flex-col justify-center items-center lg:gap-30 md:gap-15 gap-10'>
             <motion.h1
-            className='text-[10rem] font-semibold text-[var(--accent-color)]'
+            className='text-[2rem] lg:text-[6rem] md:text-[4rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -17,20 +17,20 @@ const About = () => {
             }}>
                 About Me
             </motion.h1>
-            <div className='flex flex-row items-center gap-80 text-[var(--primary-font-color)]'>
-                <p
-                className='text-[5.5rem] font-normal flex-3/5'>
-                I have been coding for over two years, beginning my journey in 2023. Initially, 
-                I started by learning HTML, CSS, and JavaScript to build basic websites. During my time at university, 
-                I also studied C, C++, and Java to understand programming paradigms and foundational concepts.
-                <br /><br />
-                My first project was a digital library application called E-Libra, 
-                which I developed as part of a submission for Dicoding. It was built using HTML, CSS, and JavaScript.
-                <br /><br />
-                As I progressed, I began focusing on React.js and Next.js, aiming to deepen my expertise in these technologies. 
-                While I intend to continue strengthening my skills in this area, I also remain open to learning and 
-                adapting to other technologies as needed.
+            <div className='flex flex-row items-center gap-3 lg:gap-10 md:gap-5 text-[var(--primary-font-color)]'>
+              <div className='flex flex-col gap-3 lg:gap-8 md:gap-5 text-[1rem] lg:text-[2.5rem] md:text-[22px] font-normal flex-3/5'>
+                <p>
+                  I began my coding journey in 2023, starting with HTML, CSS, and JavaScript to build basic websites.  
+                  In university, I also explored C, C++, and Java to strengthen my understanding of programming fundamentals. 
                 </p>
+                <p>
+                  My first project, a digital library app called E-Libra, was built using HTML, CSS, and JavaScript for a Dicoding submission.
+                </p>
+                <p>
+                  As I advanced, I focused on React.js and Next.js to deepen my expertise in modern web development,  
+                  while staying open to learning other technologies as needed.
+                </p>
+              </div>
                 <Mission />
             </div>
         </div>

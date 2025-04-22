@@ -69,7 +69,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     <motion.div
       ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("fixed inset-x-0 top-20 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-10 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -91,7 +91,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "60%" : "100%",
+        width: visible ? "80%" : "100%",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -103,7 +103,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-6/7 flex-row items-center justify-between self-start rounded-3xl bg-transparent px-18 py-12 lg:flex dark:bg-transparent md:px-14 md:py-8",
+        "relative z-[60] mx-auto hidden w-full max-w-9/10 flex-row items-center justify-between self-start rounded-2xl bg-transparent lg:px-10 lg:py-4 md:px-8 md:py-2 lg:flex dark:bg-transparent ",
         visible && "bg-[var(--bg-navbar)] backdrop-filter backdrop-blur-lg",
         className,
       )}
@@ -128,14 +128,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-9 py-6 text-[var(--primary-font-color)]"
+          className="relative lg:px-7 lg:py-4 md:px-5 md:py-3 text-[var(--primary-font-color)]"
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-2xl bg-[var(--bg-button)]"
+              className="absolute inset-0 h-full w-full rounded-xl bg-[var(--bg-button)]"
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -243,7 +243,7 @@ export const NavbarLogo = ({
       <Image
         src={src}
         alt="logo"
-        className="h-full lg:w-60 md:w-45 sm:w-20"
+        className="h-full lg:w-30 md:w-18 w-10"
       />
       <span className="font-medium text-black dark:text-white"></span>
     </Link>
