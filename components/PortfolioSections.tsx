@@ -225,14 +225,14 @@ function TechStackSection() {
                 <Link
                     href={tech?.link || "#"}
                     key={i}
-                    className="relative group block p-10"
+                    className="relative group block lg:p-5 md:p-3 p-2 lg:rounded-4xl md:rounded-3xl rounded-2xl"
                     onMouseEnter={() => setHoveredIndex(i)}
                     onMouseLeave={() => setHoveredIndex(null)}
                 >
                     <AnimatePresence>
                         {hoveredIndex === i && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-[var(--card-hover-color)] block rounded-4xl"
+                                className="absolute inset-0 h-full w-full bg-[var(--card-hover-color)] block lg:rounded-4xl md:rounded-2xl rounded-xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -246,8 +246,8 @@ function TechStackSection() {
                             />
                         )}
                     </AnimatePresence>
-                    <button className="relative z-50 gap-10 px-15 py-8 text-[4rem] flex flex-row rounded-2xl hover:cursor-pointer border-1 border-[var(--card-color)] group-hover:border-[var(--border-hover)] text-[var(--primary-font-color)] bg-[var(--card-color)] transition duration-200">
-                        <StackIcon name={tech.icon} />
+                    <button className="relative z-50 lg:gap-8 md:gap-5 gap-3 lg:px-10 lg:py-6 md:px-8 md:py-4 px-3 py-2 lg:text-[2rem] md:text-[1.5rem] flex flex-row items-center lg:rounded-2xl md:rounded-xl rounded-lg hover:cursor-pointer border-1 border-[var(--card-color)] group-hover:border-[var(--border-hover)] text-[var(--primary-font-color)] bg-[var(--card-color)] transition duration-200">
+                        <StackIcon className='lg:w-15 lg:h-15 md:w-10 md:h-10 w-5 h-5' name={tech.icon} />
                         {tech.title}
                     </button>
                 </Link>
@@ -282,7 +282,7 @@ const tabs = [
         content: (
             <>
                 <TechStackSection />
-                <span className='flex justify-center items-center text-[var(--primary-font-color)] text-[4rem]'>...and many more!</span>
+                <span className='flex justify-center items-center text-[var(--primary-font-color)] lg:text-[2.5rem]'>...and many more!</span>
             </>
         )
     }
@@ -290,9 +290,9 @@ const tabs = [
 
 function PortfolioSections() {
   return (
-    <div className='mt-100 w-full h-full flex flex-col gap-20 items-center text-[4rem] px-40'>
+    <div className='lg:mt-50 md:mt-20 mt-10 w-full h-full flex flex-col lg:gap-10 md:gap-7 gap-4 items-center px-5 lg:px-20 md:px-10'>
         <motion.h1
-            className='text-[10rem] font-semibold text-[var(--accent-color)]'
+            className='text-[2rem] lg:text-[6rem] md:text-[4rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

@@ -110,7 +110,7 @@ const tabs = [
 
 function EducationSections() {
   return (
-    <div className='lg:mt-50 md:mt-20 mt-10 overflow-clip flex flex-col lg:gap-18 md:gap-10 gap-5 items-center text-[4rem] px-5 lg:px-20 md:px-10'>
+    <div className='lg:mt-50 md:mt-20 mt-10 overflow-clip flex flex-col lg:gap-18 md:gap-10 gap-5 items-center px-5 lg:px-20 md:px-10'>
         <motion.h1
             className='text-[2rem] lg:text-[6rem] md:text-[4rem] font-semibold text-[var(--accent-color)]'
             initial={{ opacity: 0.0, y: 40 }}

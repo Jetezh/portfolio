@@ -23,7 +23,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5",
         className
       )}
     >
@@ -31,7 +31,7 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group block p-10 h-full w-full"
+          className="relative group block lg:p-5 md:p-3 p-1.5 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -73,12 +73,12 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-4xl h-full w-full p-2 overflow-hidden bg-[var(--card-color)] border-6 border-transparent group-hover:border-[var(--border-hover)] relative z-20",
+        "lg:rounded-3xl md:rounded-2xl rounded-xl h-full w-full p-2 overflow-hidden bg-[var(--card-color)] border-4 border-transparent group-hover:border-[var(--border-hover)] relative z-20",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-6">{children}</div>
+        <div className="lg:p-1 md:p-0.5 ">{children}</div>
       </div>
     </div>
   );
@@ -92,7 +92,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-[var(--primary-font-color)] font-semibold tracking-wide mt-6", className)}>
+    <h4 className={cn("text-[var(--primary-font-color)] lg:text-[1.5rem] font-semibold tracking-wide lg:mt-4 md:mt-2 mt-1", className)}>
       {children}
     </h4>
   );
@@ -108,7 +108,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-[var(--primary-font-color)] tracking-wide leading-relaxed text-[3rem]",
+        "lg:mt-2 md:mt-0.5 mt-[1px] text-[var(--primary-font-color)] tracking-wide leading-relaxed lg:text-[1.5rem] md:text-[.7rem] text-[.5rem]",
         className
       )}
     >
@@ -128,7 +128,7 @@ export const CardImage = ({
 }) => {
     return (
         <Image
-        className={cn( "w-full rounded-4xl " , className)}
+        className={cn( "w-full lg:rounded-2xl md:rounded-xl rounded-lg" , className)}
         src={src}
         alt={alt}
          />
