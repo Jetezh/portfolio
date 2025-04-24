@@ -29,13 +29,13 @@ const Hero = () => {
           </motion.div>
           <div className='z-10 mt-5 lg:mt-20 md:mt-10 flex flex-row gap-5 lg:gap-15 md:gap-10'>
             <button className="px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-[1rem] lg:text-[2.5rem] md:text-[2rem] rounded-lg lg:rounded-3xl md:rounded-2xl bg-[#FF9149] text-white font-semibold transition duration-300 hover:bg-[var(--button-hover)] hover:cursor-pointer hover:text-[#FF9149] border-4 lg:border-8 md:border-6 border-transparent hover:border-[#FF9149] active:scale-90">
-              <Link className='flex flex-row gap-2 lg:gap-10 md:gap-6 items-center' href="">
+              <Link className='flex flex-row gap-2 lg:gap-7 md:gap-6 items-center' href="">
                 <SiReaddotcv />
                 Download CV  
               </Link>
             </button>
             <button className="px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-[1rem] lg:text-[2.5rem] md:text-[2rem] rounded-lg lg:rounded-3xl md:rounded-2xl bg-[var(--bg-button)] text-[var(--primary-font-color)] border-[var(--border-color)] font-semibold transition duration-300 hover:cursor-pointer hover:bg-[var(--github-button-hover)] hover:text-black border-4 lg:border-8 md:border-6 hover:border-[var(--github-border)] active:scale-90">
-              <Link className='flex flex-row gap-2 lg:gap-8 md:gap-6 items-center' href="https://github.com/Jetezh">
+              <Link className='flex flex-row gap-2 lg:gap-7 md:gap-6 items-center' href="https://github.com/Jetezh">
                 <FaSquareGithub className='text-[1.2rem] lg:text-[4rem] md:text-[3rem]' />
                 Github 
               </Link>

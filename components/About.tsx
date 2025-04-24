@@ -4,7 +4,7 @@ import Mission from './Mission'
 
 const About = () => {
   return (
-    <div id='#about-me' className='px-5 lg:px-20 md:px-10 w-full h-full'>
+    <div id='#about-me' className='lg:mt-50 md:mt-30 px-5 lg:px-20 md:px-10 w-full h-full'>
         <div className='flex flex-col justify-center items-center lg:gap-30 md:gap-15 gap-10'>
             <motion.h1
             className='text-[2rem] lg:text-[6rem] md:text-[4rem] font-semibold text-[var(--accent-color)]'
