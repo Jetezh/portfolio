@@ -9,42 +9,42 @@ const educationsFormal = [
     {
         title: "2018 - 2021",
         content: (
-            <div className='flex flex-col gap-10'>
-                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>SMK Negeri 42 Jakarta</h2>
-                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] italic'>Office Administration</p>
+            <div className='flex flex-col lg:gap-10 md:gap-5 gap-2'>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1rem] font-medium'>SMK Negeri 42 Jakarta</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1rem] italic'>Office Administration</p>
                 <Image 
                 src={assets.smk1} 
                 alt='school-photo1'
                 width={500}
                 height={200}
-                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'/>
+                className='lg:rounded-4xl md:rounded-2xl rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'/>
                 <Image 
                 src={assets.smk2} 
                 alt='school-photo2'
                 width={500}
                 height={200}
-                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'/>
+                className='lg:rounded-4xl md:rounded-2xl rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'/>
             </div>
         )
     },
     {
         title: "2023 - Present",
         content: (
-            <div className='flex flex-col gap-10'>
-                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>Universitas Pembangunan Nasional Veteran Jakarta</h2>
-                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] italic'>Information System undergraduate bachelor degree</p>
+            <div className='flex flex-col lg:gap-10 md:gap-5 gap-2'>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1rem] font-medium'>Universitas Pembangunan Nasional Veteran Jakarta</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1rem] italic'>Information System undergraduate bachelor degree</p>
                 <Image
                 src={assets.upnvj1}
                 alt='university-photo1'
                 width={500}
                 height={200}
-                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
+                className='lg:rounded-4xl md:rounded-2xl rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
                 <Image
                 src={assets.upnvj2}
                 alt='university-photo2'
                 width={500}
                 height={200}
-                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
+                className='lg:rounded-4xl md:rounded-2xl rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
             </div>
         )
     }
@@ -54,25 +54,25 @@ const educationNonFormal = [
     {
         title: "2023 - Present",
         content: (
-            <div className='flex flex-col gap-10'>
-                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>Dicoding</h2>
-                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem]'>I recieved Dicoding Scholarship for Mechine Learning Path from Beginner to Intermediate, BackEnd Path for Beginner, FrontEnd path for Beginner, and some other course that related to IT field</p>
+            <div className='flex flex-col lg:gap-10 md:gap-5 gap-2'>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1rem] font-medium'>Dicoding</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1rem]'>I recieved Dicoding Scholarship for Mechine Learning Path from Beginner to Intermediate, BackEnd Path for Beginner, FrontEnd path for Beginner, and some other course that related to IT field</p>
                 <Image
                 src={assets.dicoding}
                 alt=''
                 width={500}
                 height={200}
-                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
+                className='lg:rounded-4xl md:rounded-2xl rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
             </div>
         )
     },
     {
         title: "2023 - Present",
         content: (
-            <div className='flex flex-col gap-10'>
-                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1.3rem] font-medium'>Freecodecamp</h2>
-                <p className='lg:text-[3rem] md:text-[2rem] text-[1.3rem]'>I learnt course for web development mainly, the course i learned </p>
-                <ul className='lg:text-[3rem] md:text-[2rem] text-[1.3rem]' >
+            <div className='flex flex-col lg:gap-10 md:gap-5 gap-2'>
+                <h2 className='lg:text-[3rem] md:text-[2rem] text-[1rem] font-medium'>Freecodecamp</h2>
+                <p className='lg:text-[3rem] md:text-[2rem] text-[1rem]'>I learnt course for web development mainly, the course i learned </p>
+                <ul className='lg:text-[3rem] md:text-[2rem] text-[1rem]' >
                     <li>1. Responisve Web Design</li>
                     <li>2. Javascript Algorithms and Data Structures</li>
                     <li>3. Front End Development Libraries</li>
@@ -85,7 +85,7 @@ const educationNonFormal = [
                 alt=''
                 width={500}
                 height={200}
-                className='rounded-4xl object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
+                className='lg:rounded-4xl md:rounded-2xl rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]' />
             </div>
         )
     }

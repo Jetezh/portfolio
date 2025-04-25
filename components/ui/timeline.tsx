@@ -41,13 +41,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-5 lg:pt-20 md:pt-15 lg:gap-15 md:gap-10 gap-5"
+            className="flex justify-start pt-5 lg:pt-20 md:pt-15 lg:gap-10 md:gap-5 gap-2"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+              <div className="lg:h-8 lg:w-8 md:h-7 md:w-7 h-4 w-4 absolute lg:left-5.5 md:left-5.5 left-6.5 rounded-full bg-[var(--bg-navbar)] flex items-center justify-center">
+                <div className="lg:h-4 lg:w-4 md:h-2 md:w-2 h-2 w-2 rounded-full bg-[var(--bg-dot)] border border-[var(--bg-border-dot)] lg:p-2 md:p-2 p-0.5" />
               </div>
-              <h3 className="hidden md:block lg:text-[4rem] md:text-[2.5rem] text-[1.5rem] md:pl-20 font-bold text-[var(--sticky-font-color)] ">
+              <h3 className="hidden md:block lg:text-[4rem] md:text-[2.5rem] text-[1.5rem] md:pl-15 lg:pl-20 font-bold text-[var(--sticky-font-color)] ">
                 {item.title}
               </h3>
             </div>
@@ -71,7 +71,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0 w-[12px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0 lg:w-[12px] md:w-[8px] w-[5px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

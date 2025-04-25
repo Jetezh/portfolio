@@ -82,13 +82,14 @@ const NavbarContainer = () => {
           <MobileNavMenu
             isOpen={isMobileMenuOpen}
             onClose={() => setIsMobileMenuOpen(false)}
+            className="bg-[var(--bg-mobile-navbar)]"
           >
             {navItems.map((item, idx) => (
               <a
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative text-[var(--primary-font-color)]"
               >
                 <span className="block">{item.name}</span>
               </a>
@@ -97,9 +98,9 @@ const NavbarContainer = () => {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
+                className="w-full bg-[var(--bg-navbar)] flex flex-row text-[1.5rem] text-[var(--primary-font-color)] gap-3 font-normal items-center justify-center"
               >
-                {theme === "light" ? "Light" : "Dark"}
+                <ThemeSwitch />{theme === "light" ? "dark mode" : "light mode"}
               </NavbarButton>
             </div>
           </MobileNavMenu>

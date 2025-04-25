@@ -31,14 +31,14 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group block lg:p-5 md:p-3 p-1.5 h-full w-full"
+          className="relative group block lg:p-4 md:p-3 p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[var(--card-hover-color)] block rounded-4xl"
+                className="absolute inset-0 h-full w-full bg-[var(--card-hover-color)] block lg:rounded-4xl md:rounded-2xl rounded-xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
