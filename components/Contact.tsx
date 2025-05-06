@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { motion } from 'motion/react'
 import { LuSend } from "react-icons/lu";
 import Link from 'next/link';
@@ -7,10 +7,35 @@ import { assets } from '@/assets/asset';
 
 function Contact() {
     const [ message, setMessage] = useState("");
+    const formRef = useRef<HTMLFormElement>(null);
 
     const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         if( e.target.value.length <= 500 ) {
             setMessage(e.target.value)
+        }
+    }
+
+    async function sendMessage(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+    
+        const senderName = (document.getElementById("nameInput") as HTMLInputElement).value;
+        const senderEmail = (document.getElementById("emailInput") as HTMLInputElement).value;
+        const senderMessage = (document.getElementById("message") as HTMLTextAreaElement).value;
+    
+        const response = await fetch('/api/sendMessage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ senderName, senderEmail, senderMessage }),
+        });
+    
+        if (response.ok) {
+            alert('I have received your message!');
+            formRef.current?.reset();
+            setMessage("");
+        } else {
+            alert('There was an error! Try again later!');
         }
     }
 
@@ -33,15 +58,18 @@ function Contact() {
             </p>
 
             <div className='w-full lg:p-10 md:p-5 p-2 border-1 lg:border-3 md:border-2 lg:rounded-3xl md:rounded-2xl rounded-xl border-gray-500'>
-                <form className='flex flex-col lg:text-[2.5rem] md:text-[1.5rem] text-[.7rem] text-[var(--primary-font-color)]' action="">
+                <form 
+                className='flex flex-col lg:text-[2.5rem] md:text-[1.5rem] text-[.7rem] text-[var(--primary-font-color)]' 
+                onSubmit={sendMessage}
+                ref={formRef}>
                     <div className='flex flex-row lg:gap-20 md:gap-10 gap-5'>
                         <div className='flex flex-col flex-1/2'>
                             <label htmlFor="username">Name</label>
-                            <input className='lg:p-5 md:p-3 p-1 lg:rounded-2xl md:rounded-xl rounded-md border-1 lg:border-3 md:border-2 border-gray-500' type="text" placeholder='john due' aria-required/>
+                            <input id='nameInput' className='lg:p-5 md:p-3 p-1 lg:rounded-2xl md:rounded-xl rounded-md border-1 lg:border-3 md:border-2 border-gray-500' type="text" placeholder='john due' aria-required/>
                         </div>
                         <div className='flex flex-col flex-1/2'>
                             <label htmlFor="email">Email</label>
-                            <input className='lg:p-5 md:p-3 p-1 lg:rounded-2xl md:rounded-xl rounded-md border-1 lg:border-3 md:border-2 border-gray-500' type="email" placeholder='example@email.com' aria-required/>
+                            <input id='emailInput' className='lg:p-5 md:p-3 p-1 lg:rounded-2xl md:rounded-xl rounded-md border-1 lg:border-3 md:border-2 border-gray-500' type="email" placeholder='example@email.com' aria-required/>
                         </div>
                     </div>
                     <label className='lg:mt-10 md:mt-5 mt-2' htmlFor="message">Message</label>
