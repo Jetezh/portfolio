@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       <AuroraBackground>
-        <div id='#hero' className='text-7xl h-full w-full md: flex flex-col justify-center items-center'>
+        <div id='home' className='text-7xl h-full w-full md: flex flex-col justify-center items-center'>
           <motion.div 
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -4,6 +4,11 @@
   font-family: Fredoka;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
 .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -67,7 +72,7 @@
   --sticky-font-color: #737373;
   --bg-button: rgba(95, 95, 95, 0.6);
   --bg-button-hover: rgba(223, 223, 223, 0.66);
-  --bg-navbar: rgba(255, 255, 255, 0.15);
+  --bg-navbar: rgba(132, 132, 132, 0.15);
   --navbar-items: var(--accent-color);
 
   --bg-mobile-navbar: rgb(73, 68, 68);

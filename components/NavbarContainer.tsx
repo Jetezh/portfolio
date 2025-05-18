@@ -17,10 +17,10 @@ import { assets } from "@/assets/asset";
 
 const NavbarContainer = () => {
   const navItems = [
-    { name: "HOME", link: "#" },
+    { name: "HOME", link: "#home" },
     { name: "ABOUT ME", link: "#about-me" },
-    { name: "PORTFOLIO", link: "#portfolio" },
-    { name: "CONTACT", link: "#contact" },
+    { name: "PORTFOLIO", link: "#portfolios" },
+    { name: "CONTACT", link: "#contacts" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -98,7 +98,7 @@ const NavbarContainer = () => {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full bg-[var(--bg-navbar)] flex flex-row text-[1.5rem] text-[var(--primary-font-color)] gap-3 font-normal items-center justify-center"
+                className="w-full bg-[var(--bg-navbar)] flex flex-row text-lg md:text-2xl text-[var(--primary-font-color)] gap-3 font-normal items-center justify-center"
               >
                 <ThemeSwitch />{theme === "light" ? "dark mode" : "light mode"}
               </NavbarButton>

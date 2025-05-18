@@ -40,7 +40,9 @@ function Contact() {
     }
 
     return (
-        <div className='lg:mt-50 md:mt-20 mt-10 w-full h-full flex flex-col lg:gap-10 md:gap-7 gap-4 items-center px-5 lg:px-20 md:px-10'>
+        <div 
+        className='lg:mt-50 md:mt-20 mt-10 w-full h-full flex flex-col lg:gap-10 md:gap-7 gap-4 items-center px-5 lg:px-20 md:px-10'
+        id='contacts'>
             <motion.h1
                 className='text-[2rem] lg:text-[6rem] md:text-[4rem] font-semibold text-[var(--accent-color)]'
                 initial={{ opacity: 0.0, y: 40 }}
