@@ -9,10 +9,10 @@ import Link from 'next/link'
 const project = [
     {
         image: assets.freecodecamp,
-        alt: "",
+        alt: "UPNI Project",
         title: "UPNI",
-        description: "",
-        link: ""
+        description: "University Project Management System",
+        link: "/projects?project=upni",
     },
 ]
 

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import NavbarContainer from "@/components/NavbarContainer";
 import PortfolioSections from "@/components/PortfolioSections";
+import React from "react";
 
 export default function Home() {
   return (
