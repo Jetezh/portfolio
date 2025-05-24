@@ -3,7 +3,6 @@
 import React from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'motion/react';
-import { Button } from '@heroui/react';
 import { FaArrowLeft } from "react-icons/fa";
 import Link from 'next/link';
 
@@ -23,20 +22,17 @@ export default function Projects() {
   const projectData = project ? projects[project as keyof typeof projects] : null;
 
   return (
-    <div className="h-screen w-full bg-[var(--bg-color)] text-[var(--primary-font-color)]">
-      <div className="flex justify-center items-center">
+    <div className="h-screen w-full lg:p-10 md:p-8 p-5 bg-[var(--bg-color)] text-[var(--primary-font-color)]">
+      <div className="flex justify-start items-center">
         <Link href="/">
-          <Button
-            size='lg'
-            radius='sm'
-            variant='ghost'
-            className='flex flex-row gap-5 text-[4rem] hover:cursor-pointer'>
+          <button
+            className='flex flex-row items-center lg:gap-5 md:gap-3 gap-2 lg:text-[2rem] md:text-[1.5rem] text-[1rem] border-2 border-[var(--accent-color)] rounded-full lg:px-6 px-4 py-2 hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] hover:cursor-pointer transition-all duration-300'>
             <FaArrowLeft />
             Back to Home
-          </Button>
+          </button>
         </Link>
       </div>
-      <div className="container mx-auto px-4 py-8">
+      <div className="w-full lg:py-8 py-4">
         {projectData ? (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -44,9 +40,9 @@ export default function Projects() {
             transition={{ duration: 0.5 }}
             className="w-full mx-auto"
           >
-            <h1 className="text-[5rem] font-bold mb-4">{projectData.title}</h1>
-            <p className="text-xl mb-6">{projectData.description}</p>
-            <div className="prose prose-lg">
+            <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem] text-center font-bold mb-4">{projectData.title}</h1>
+            <p className="lg:text-[2rem] md:text-[1.5rem] text-[1rem] mb-6">{projectData.description}</p>
+            <div className="lg:text-[2rem] md:text-[1.5rem] text-[1rem] prose prose-lg">
               <p>{projectData.details}</p>
             </div>
             {projectData.github && (
