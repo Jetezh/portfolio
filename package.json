@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@heroui/react": "^2.7.6",
-    "@heroui/switch": "^2.2.15",
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.1",
     "motion": "^12.6.3",
@@ -18,11 +17,8 @@
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-element-to-jsx-string": "^17.0.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.6.0",
     "tailwind-merge": "^3.2.0",
-    "tech-stack-icons": "^2.1.0",
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
