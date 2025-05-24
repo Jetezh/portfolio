@@ -26,6 +26,7 @@ import discord from './discord.svg'
 import instagram from './instagram.svg'
 import email from './email.svg'
 import github from './github.svg'
+import projectPortfolio from './project_portfolio.webp'
 
 export const assets = {
     logo1,
@@ -55,5 +56,6 @@ export const assets = {
     discord,
     instagram,
     email,
-    github
+    github,
+    projectPortfolio
 }
