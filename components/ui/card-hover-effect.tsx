@@ -128,7 +128,7 @@ export const CardImage = ({
 }) => {
     return (
         <Image
-        className={cn( "w-full lg:h-[15rem] md:h-[11rem] h-[11rem] object-cover lg:rounded-2xl md:rounded-xl rounded-lg" , className)}
+        className={cn( "w-full lg:h-[20rem] md:h-[11rem] h-[11rem] object-cover lg:rounded-2xl md:rounded-xl rounded-lg" , className)}
         src={src}
         alt={alt}
          />
