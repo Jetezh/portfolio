@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'motion/react';
 import { FaArrowLeft } from "react-icons/fa";
@@ -15,7 +15,7 @@ const projects = {
   },
 };
 
-export default function Projects() {
+function ProjectsContent() {
   const searchParams = useSearchParams();
   const project = searchParams?.get('project') || null;
 
@@ -71,5 +71,17 @@ export default function Projects() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function Projects() {
+  return (
+    <Suspense fallback={
+      <div className="h-screen w-full flex items-center justify-center bg-[var(--bg-color)] text-[var(--primary-font-color)]">
+        <div className="text-2xl">Loading...</div>
+      </div>
+    }>
+      <ProjectsContent />
+    </Suspense>
   );
 }
