@@ -9,11 +9,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 
 const downloadCV = () => {
   const cv = 'https://drive.google.com/file/d/1MGWkuyfP7wfuD4aBO4y6g427xwi72Xkp/view?usp=sharing';
-  if (cv !== "") {
-    window.open(cv, '_blank');
-  } else {
-    window.alert("Oops, there is no CV here");
-  }
+  window.open(cv, '_blank');
 }
 
 const Hero = () => {
