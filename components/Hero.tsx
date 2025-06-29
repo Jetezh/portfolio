@@ -28,7 +28,7 @@ const Hero = () => {
           className='text-center font-medium px-8 lg:px-18 md:px-14'>
             <h1 className='text-[1.5rem] lg:text-[5rem] md:text-[3rem] font-semibold text-[#FF9149]'>Greetings,
               <br /><span className='text-[var(--primary-font-color)]'>My name is Vega Setiawan</span>
-              <br /><span className='text-[var(--primary-font-color)]'>Passionate <span className='text-[#FF9149]'>Fullstack Developer</span></span>
+              <br /><span className='text-[var(--primary-font-color)]'>Passionate <span className='text-[#FF9149]'>Web Developer</span></span>
             </h1>
             <p className='font-normal text-[var(--primary-font-color)] text-[1.2rem] lg:text-[3.5rem] md:text-[3rem] mt-5 lg:mt-10 md:mt-8'>I specialize in web development, system architecture, and scalable system design.</p>
           </motion.div>
